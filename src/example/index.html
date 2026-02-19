@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Form</title>
+</head>
+<body>
+  <h2>Apna Naam Daalo</h2>
+  <input type="text" id="naam" placeholder="Naam likho yahan" />
+  <button onclick="greet()">Submit</button>
+  <p id="output"></p>
+
+  <script>
+    function greet() {
+      const naam = document.getElementById('naam').value.trim();
+      if (naam) {
+        document.getElementById('output').textContent = 'Hello, ' + naam + '!';
+      } else {
+        document.getElementById('output').textContent = 'Pehle apna naam daalo!';
+      }
+    }
+  </script>
+</body>
+</html>
